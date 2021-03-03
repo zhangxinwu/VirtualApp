@@ -134,6 +134,6 @@ LOCAL_SRC_FILES := Jni/VAJni.cpp \
                    utils/zMd5.cpp \
                    utils/controllerManagerNative.cpp
 endif
-LOCAL_LDLIBS := -llog -latomic
+LOCAL_LDLIBS += -llog -latomic
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
